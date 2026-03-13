@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hwei's corner</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+        @font-face {
+            font-family: 'Minecraft';
+            src: url('https://cdn.jsdelivr.net/gh/South-Paw/typeface-minecraft@master/files/minecraft-regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        :root {
+            --bg: #000;
+            --fg: #fff;
+            --hi: #fff;
+            --bdr: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Minecraft', 'VT323', monospace;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.5;
+            font-size: 16px;
+        }
+
+        .wrap {
+            max-width: 80ch;
+            margin-left: 4rem;
+            padding: 2rem 1rem 2rem 0;
+            min-height: 100vh;
+        }
+
+        header {
+            border-bottom: 1px solid var(--bdr);
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .header-top {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border: 2px solid var(--bdr);
+            object-fit: cover;
+            image-rendering: pixelated;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .meta {
+            border-left: 2px solid var(--bdr);
+            padding-left: 0.8rem;
+        }
+
+        .meta p {
+            margin-bottom: 0.3rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            background: var(--hi);
+            color: var(--bg);
+            padding: 0.3rem 0.6rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+        }
+
+        .desc-text {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .c-list {
+            list-style: none;
+            margin-top: 0.5rem;
+        }
+
+        .c-list li {
+            margin-bottom: 0.6rem;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+        .c-list li::before {
+            content: "> ";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        a {
+            color: var(--fg);
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background: var(--fg);
+            color: var(--bg);
+        }
+
+        .gif-box {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .gif-box img {
+            image-rendering: pixelated;
+            max-width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .wrap {
+                margin-left: 1rem;
+                margin-right: 1rem;
+                padding: 1rem 0;
+            }
+
+            .header-top {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="header-top">
+                <img src="https://cdn.discordapp.com/attachments/1392027549223223387/1481918944129581168/hinako.jpg?ex=69b51011&is=69b3be91&hm=a4cb87f368d37e7ec3b0ed491057d9210aafd655854a46d91653c5fd1280eda0&"
+                    alt="hwei" class="avatar">
+                <h1>HWEI</h1>
+            </div>
+
+            <div class="meta">
+                <p><strong>AGE:</strong> 16</p>
+                <p><strong>LOCATION:</strong> TÜRKİYE</p>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>ABOUT</h2>
+            <p class="desc-text">
+                Chess enthusiast, programmer, and a student who likes to code.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>CONTACT</h2>
+            <ul class="c-list">
+                <li>
+                    <strong>EMAIL:</strong>
+                    <a href="mailto:hwei33@pm.me">hwei33@pm.me</a>
+                </li>
+                <li>
+                    <strong>GITHUB:</strong>
+                    <a href="https://github.com/h73i" target="_blank">github.com/h73i</a>
+                </li>
+            </ul>
+        </section>
+
+        <div class="gif-box">
+            <img src="https://count.getloli.com/@count?name=count&theme=random&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=auto&num=1337"
+                alt="Counter">
+        </div>
+    </div>
+</body>
+
+</html>
